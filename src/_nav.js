@@ -292,6 +292,11 @@ const _nav = [
         name: 'Error 500',
         to: '/500',
       },
+      {
+        component: CNavItem,
+        name: 'ForexDataComponent',
+        to: '/forexDataComponent',
+      }
     ],
   },
   {
