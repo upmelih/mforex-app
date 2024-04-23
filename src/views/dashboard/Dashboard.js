@@ -18,6 +18,9 @@ import {
   CTableHead,
   CTableHeaderCell,
   CTableRow,
+  CInputGroup,
+  
+  CFormInput
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
 import {
@@ -178,8 +181,28 @@ const Dashboard = () => {
 
   return (
     <>
+    <CRow>
+        <CCol xs={12}>
+          <CCard className="mb-4" >
+            <CCardBody>
+              <CInputGroup className="mb-3">
+                <CFormInput
+                  placeholder="Recipient's username"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+                <CButton type="button" color="secondary" variant="outline" id="button-addon2">
+                  Button
+                </CButton>
+              </CInputGroup>
+            </CCardBody>
+          </CCard>
+        </CCol>
+      </CRow>
       <WidgetsDropdown className="mb-4" />
-      <CCard className="mb-4">
+     
+      
+      {/* <CCard className="mb-4">
         <CCardBody>
           <CRow>
             <CCol sm={5}>
@@ -232,9 +255,9 @@ const Dashboard = () => {
             ))}
           </CRow>
         </CCardFooter>
-      </CCard>
-      <WidgetsBrand className="mb-4" withCharts />
-      <CRow>
+      </CCard> */}
+      {/* <WidgetsBrand className="mb-4" withCharts /> */}
+      {/* <CRow>
         <CCol xs>
           <CCard className="mb-4">
             <CCardHeader>Traffic {' & '} Sales</CCardHeader>
@@ -379,7 +402,7 @@ const Dashboard = () => {
             </CCardBody>
           </CCard>
         </CCol>
-      </CRow>
+      </CRow> */}
     </>
   )
 }

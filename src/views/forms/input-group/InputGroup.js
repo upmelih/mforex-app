@@ -24,7 +24,7 @@ import { DocsExample } from 'src/components'
 const InputGroup = () => {
   return (
     <CRow>
-      <CCol xs={12}>
+      {/* <CCol xs={12}>
         <CCard className="mb-4">
           <CCardHeader>
             <strong>React Input group</strong> <small>Basic example</small>
@@ -74,8 +74,8 @@ const InputGroup = () => {
             </DocsExample>
           </CCardBody>
         </CCard>
-      </CCol>
-      <CCol xs={12}>
+      </CCol> */}
+      {/* <CCol xs={12}>
         <CCard className="mb-4">
           <CCardHeader>
             <strong>React Input group</strong> <small>Wrapping</small>
@@ -98,8 +98,8 @@ const InputGroup = () => {
             </DocsExample>
           </CCardBody>
         </CCard>
-      </CCol>
-      <CCol xs={12}>
+      </CCol> */}
+      {/* <CCol xs={12}>
         <CCard className="mb-4">
           <CCardHeader>
             <strong>React Input group</strong> <small>Sizing</small>
@@ -138,8 +138,8 @@ const InputGroup = () => {
             </DocsExample>
           </CCardBody>
         </CCard>
-      </CCol>
-      <CCol xs={12}>
+      </CCol> */}
+      {/* <CCol xs={12}>
         <CCard className="mb-4">
           <CCardHeader>
             <strong>React Input group</strong> <small>Checkboxes and radios</small>
@@ -172,8 +172,8 @@ const InputGroup = () => {
             </DocsExample>
           </CCardBody>
         </CCard>
-      </CCol>
-      <CCol xs={12}>
+      </CCol> */}
+      {/* <CCol xs={12}>
         <CCard className="mb-4">
           <CCardHeader>
             <strong>React Input group</strong> <small>Multiple inputs</small>
@@ -193,8 +193,8 @@ const InputGroup = () => {
             </DocsExample>
           </CCardBody>
         </CCard>
-      </CCol>
-      <CCol xs={12}>
+      </CCol> */}
+      {/* <CCol xs={12}>
         <CCard className="mb-4">
           <CCardHeader>
             <strong>React Input group</strong> <small>Multiple addons</small>
@@ -218,19 +218,19 @@ const InputGroup = () => {
             </DocsExample>
           </CCardBody>
         </CCard>
-      </CCol>
+      </CCol> */}
       <CCol xs={12}>
         <CCard className="mb-4">
-          <CCardHeader>
+          {/* <CCardHeader>
             <strong>React Input group</strong> <small>Button addons</small>
-          </CCardHeader>
+          </CCardHeader> */}
           <CCardBody>
-            <p className="text-body-secondary small">
+            {/* <p className="text-body-secondary small">
               Multiple add-ons are supported and can be mixed with checkbox and radio input
               versions..
-            </p>
+            </p> */}
             <DocsExample href="forms/input-group#button-addons">
-              <CInputGroup className="mb-3">
+              {/* <CInputGroup className="mb-3">
                 <CButton type="button" color="secondary" variant="outline" id="button-addon1">
                   Button
                 </CButton>
@@ -239,7 +239,7 @@ const InputGroup = () => {
                   aria-label="Example text with button addon"
                   aria-describedby="button-addon1"
                 />
-              </CInputGroup>
+              </CInputGroup> */}
               <CInputGroup className="mb-3">
                 <CFormInput
                   placeholder="Recipient's username"
@@ -250,7 +250,7 @@ const InputGroup = () => {
                   Button
                 </CButton>
               </CInputGroup>
-              <CInputGroup className="mb-3">
+              {/* <CInputGroup className="mb-3">
                 <CButton type="button" color="secondary" variant="outline">
                   Button
                 </CButton>
@@ -258,8 +258,8 @@ const InputGroup = () => {
                   Button
                 </CButton>
                 <CFormInput placeholder="" aria-label="Example text with two button addons" />
-              </CInputGroup>
-              <CInputGroup>
+              </CInputGroup> */}
+              {/* <CInputGroup>
                 <CFormInput
                   placeholder="Recipient's username"
                   aria-label="Recipient's username with two button addons"
@@ -270,12 +270,12 @@ const InputGroup = () => {
                 <CButton type="button" color="secondary" variant="outline">
                   Button
                 </CButton>
-              </CInputGroup>
+              </CInputGroup> */}
             </DocsExample>
           </CCardBody>
         </CCard>
       </CCol>
-      <CCol xs={12}>
+      {/* <CCol xs={12}>
         <CCard className="mb-4">
           <CCardHeader>
             <strong>React Input group</strong> <small>Buttons with dropdowns</small>
@@ -342,8 +342,8 @@ const InputGroup = () => {
             </DocsExample>
           </CCardBody>
         </CCard>
-      </CCol>
-      <CCol xs={12}>
+      </CCol> */}
+      {/* <CCol xs={12}>
         <CCard className="mb-4">
           <CCardHeader>
             <strong>React Input group</strong> <small>Segmented buttons</small>
@@ -385,8 +385,8 @@ const InputGroup = () => {
             </DocsExample>
           </CCardBody>
         </CCard>
-      </CCol>
-      <CCol xs={12}>
+      </CCol> */}
+      {/* <CCol xs={12}>
         <CCard className="mb-4">
           <CCardHeader>
             <strong>React Input group</strong> <small>Custom select</small>
@@ -440,8 +440,8 @@ const InputGroup = () => {
             </DocsExample>
           </CCardBody>
         </CCard>
-      </CCol>
-      <CCol xs={12}>
+      </CCol> */}
+      {/* <CCol xs={12}>
         <CCard className="mb-4">
           <CCardHeader>
             <strong>React Input group</strong> <small>Custom file input</small>
@@ -495,7 +495,7 @@ const InputGroup = () => {
             </DocsExample>
           </CCardBody>
         </CCard>
-      </CCol>
+      </CCol> */}
     </CRow>
   )
 }

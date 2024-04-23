@@ -18,7 +18,7 @@ import { DocsExample } from 'src/components'
 const Tables = () => {
   return (
     <CRow>
-      <CCol xs={12}>
+      {/* <CCol xs={12}>
         <CCard className="mb-4">
           <CCardHeader>
             <strong>React Table</strong> <small>Basic example</small>
@@ -61,8 +61,8 @@ const Tables = () => {
             </DocsExample>
           </CCardBody>
         </CCard>
-      </CCol>
-      <CCol xs={12}>
+      </CCol> */}
+      {/* <CCol xs={12}>
         <CCard className="mb-4">
           <CCardHeader>
             <strong>React Table</strong> <small>Variants</small>
@@ -131,7 +131,7 @@ const Tables = () => {
             </DocsExample>
           </CCardBody>
         </CCard>
-      </CCol>
+      </CCol> */}
       <CCol xs={12}>
         <CCard className="mb-4">
           <CCardHeader>
@@ -241,7 +241,7 @@ const Tables = () => {
           </CCardBody>
         </CCard>
       </CCol>
-      <CCol xs={12}>
+      {/* <CCol xs={12}>
         <CCard className="mb-4">
           <CCardHeader>
             <strong>React Table</strong> <small>Hoverable rows</small>
@@ -978,7 +978,7 @@ const Tables = () => {
             </DocsExample>
           </CCardBody>
         </CCard>
-      </CCol>
+      </CCol> */}
     </CRow>
   )
 }
