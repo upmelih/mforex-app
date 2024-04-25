@@ -37,24 +37,7 @@ const ForexDataComponent = ({ fromSymbol, toSymbol }) => {
 
   return (
     <div>
-      <CRow>
-        <CCol xs={12}>
-          <CCard className="mb-4">
-            <CCardBody>
-              <CInputGroup className="mb-3">
-                <CFormInput
-                  placeholder="Recipient's username"
-                  aria-label="Recipient's username"
-                  aria-describedby="button-addon2"
-                />
-                <CButton type="button" color="secondary" variant="outline" id="button-addon2">
-                  Button
-                </CButton>
-              </CInputGroup>
-            </CCardBody>
-          </CCard>
-        </CCol>
-      </CRow>
+      
       <h2>{`Forex Daily Prices (${fromSymbol} to ${toSymbol})`}</h2>
 
       <div>

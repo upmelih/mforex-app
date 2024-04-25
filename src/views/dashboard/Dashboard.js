@@ -30,53 +30,46 @@ import ForexDataComponent from '../pages/forexDataComponent/ForexDataComponent'
 import NewsSentiment from './NewsSentiment'
 
 const Dashboard = () => {
- 
-  const [fromSymbol, setFromSymbol] = useState('');
-  const [toSymbol, setToSymbol] = useState('');
-
-  // const handleButtonClick = () => {
-  //   if (fromSymbol && toSymbol) {
-  //     return <ForexDataComponent fromSymbol={fromSymbol.toUpperCase()} toSymbol={toSymbol.toUpperCase()} />;
-      
-  //   } else {
-  //     alert('Please enter both From and To symbols.');
-  //   }
-  // };
-  
-
+  const [fromSymbol, setFromSymbol] = useState('')
+  const [toSymbol, setToSymbol] = useState('')
+  const[isDetail, setIsDetail]= useState(false)
+  const handleButtonClick = () => {
+    setIsDetail(true)
+  }
   
   return (
     <>
-      <CCard style={{width: '20rem'}}>
+      <CCard >
         <CCardHeader>Real Time Currency Excahange Rate</CCardHeader>
 
         <CCardBody>
-        <CInputGroup className="mb-3">
-        <CFormInput
-          placeholder="USD/EUR"
-          aria-label="Recipient's username"
-          aria-describedby="button-addon2"
-          onChange={(e) => {
-            const symbols = e.target.value.split('/');
-            setFromSymbol(symbols[0]);
-      setToSymbol(symbols[1]);
-           
-          }}
-          
-        />
-        {/* <CButton type="button" color="secondary" variant="outline" id="button-addon2" onClick={() => handleButtonClick}>
-          Get Exchange Rate
-        </CButton> */}
-      </CInputGroup>
+          <CInputGroup className="mb-3">
+            <CFormInput
+              placeholder="USD/EUR"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+              onChange={(e) => {
+                const symbols = e.target.value.split('/')
+                setFromSymbol(symbols[0])
+                setToSymbol(symbols[1])
+              }}
+            />
+          </CInputGroup>
+
           <CCardText>
-          {fromSymbol && toSymbol && <ExchangeRate fromSymbol={fromSymbol} toSymbol={toSymbol} />}
-            With supporting text below as a natural lead-in to additional content.
+            {fromSymbol && toSymbol ? (
+              <ExchangeRate fromSymbol={fromSymbol} toSymbol={toSymbol} />
+            ) : (
+              <p>With supporting text below as a natural lead-in to additional content.</p>
+            )}
           </CCardText>
-          <CButton color="primary" href="#" onClick={() => handleButtonClick}>
+          <CButton color="primary" onClick={() => handleButtonClick()}>
             Go somewhere
           </CButton>
         </CCardBody>
       </CCard>
+      {isDetail?<ForexDataComponent fromSymbol={fromSymbol} toSymbol={toSymbol} /> :<NewsSentiment />}
+      
       
     </>
   )
